@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Objective:
+ The goal of this project is to build a Calculator App using HTML, CSS and JavaScript.The application should allow users to perform basic arithmetic  Operations like:
+ 
+ Addition
+ Subtraction
+ Multiplication
+ Division 
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type ="text" class="display" id="display" disabled>
+    <div class="buttons">
+      <!-- This is Row 1 -->
+      <button onclick="inputValue('/')" class="btn-operator" data-value="/">/</button>
+      <button onclick="inputValue('7')" class="btn" data-value="7">7</button>
+      <button onclick="inputValue('8')" class="btn" data-value="8">8</button>
+      <button onclick="inputValue('9')" class="btn" data-value="9">9</button>
+
+      <!-- This is Row 2 -->
+      <button onclick="inputValue('*')" class="btn-operator" data-value="*">*</button>
+      <button onclick="inputValue('4')" class="btn" data-value="4">4</button>
+      <button onclick="inputValue('5')" class="btn" data-value="5">5</button>
+      <button onclick="inputValue('6')" class="btn" data-value="6">6</button>
+
+      <!-- This is Row 3 -->
+      <button onclick="inputValue('-')" class="btn-operator" data-value="-">-</button>
+      <button onclick="inputValue('3')" class="btn" data-value="3">3</button>
+      <button onclick="inputValue('2')" class="btn" data-value="2">2</button>
+      <button onclick="inputValue('1')" class="btn" data-value="1">1</button>
+      
+      <!-- This is Row 4 -->
+      <button onclick="inputValue('+')" class="btn-operator" data-value="+">+</button>
+      <button onclick="inputValue('0')" class="btn" data-value="0">0</button>
+      <button onclick="inputValue('.')" class="btn" data-value=".">.</button>
+      <button onclick="calculateValue()" class="btn-equal" id="equal">=</button>
+      <button onclick="clearDisplay()" class="btn" id="clear">C</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
